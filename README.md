@@ -2,7 +2,7 @@
 
 Express Authentication API
 
-* **User Registration API**
+* **1. User Registration API**
 
   http://localhost:2000/register
 
@@ -31,7 +31,9 @@ Express Authentication API
 	"_id": "5ab11a77ee3a22761da9b5f8",
 	"createdAt": "2018-03-20T14:28:07.658Z" }`
 	
-* **User Login API**
+	
+	
+* **2. User Login API**
 
   http://localhost:2000/login
 
@@ -53,7 +55,10 @@ Express Authentication API
   * **Code:** 200 <br />
     **Content:** `{ message : "Authentication Success",
 			access_token: <token> }`
-* **User Forgot Password API**
+			
+			
+			
+* **3. User Forgot Password API**
 
   http://localhost:2000/forgot-password
 
