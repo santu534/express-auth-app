@@ -81,5 +81,5 @@ Express Authentication API
 	`npm install`
 - Run
 
-	`nom start`  or  `node server.js`
+	`npm start`  or  `node server.js`
 
