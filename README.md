@@ -2,7 +2,7 @@
 
 Express Authentication API
 
-* **User Register API**
+* **User Registration API**
 
   http://localhost:2000/register
 
