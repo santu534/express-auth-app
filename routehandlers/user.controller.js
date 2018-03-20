@@ -43,7 +43,7 @@ function login(req, res) {
       if (!user.comparePassword(req.body.password)) {
         res.status(401).json({ message: 'Authentication failed. Wrong password.' });
       } else {
-        return res.json({ token: jwt.sign({ email: user.email, firstName: user.firstName, lastName: user.lastName, _id: user._id }, 'test') });
+        return res.json({ message: 'Authentication success.', access_token: jwt.sign({ email: user.email, firstName: user.firstName, lastName: user.lastName, _id: user._id }, 'test') });
       }
     }
   });
@@ -82,7 +82,7 @@ function forgotPassword(req, res) {
       });
     },
     function (token, user, done) {
-      return res.status(200).json({ 'token': token });
+      return res.status(200).json({ message:"successfuly created token",access_token: token });
     }
   ], function (err) {
     return res.status(422).json({ message: err });
